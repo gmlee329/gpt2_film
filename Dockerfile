@@ -11,5 +11,7 @@ RUN pip install transformers \
 
 RUN pip install flask && pip install waitress
 
-WORKDIR /gpt2_story/
+WORKDIR /gpt2_film/
 EXPOSE 80
+COPY . .
+ENTRYPOINT ["python", "server.py"]

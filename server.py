@@ -20,8 +20,8 @@ app = Flask(__name__)
 # limit input file size under 2MB
 
 # model loading
-tokenizer = AutoTokenizer.from_pretrained("pranavpsv/gpt2-genre-story-generator")
-model = AutoModelWithLMHead.from_pretrained("pranavpsv/gpt2-genre-story-generator", return_dict=True)
+tokenizer = AutoTokenizer.from_pretrained("cpierse/gpt2_film_scripts")
+model = AutoModelWithLMHead.from_pretrained("cpierse/gpt2_film_scripts", return_dict=True)
 
 # change cpu to gpu so that model can use gpu (because default type is cpu)
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
@@ -123,7 +123,7 @@ def run_long(prompt, num, length):
         return 500
 
 # routing
-@app.route("/gpt2-story/<types>", methods=['POST'])
+@app.route("/gpt2-film/<types>", methods=['POST'])
 def generation(types):
     try:
         if types != 'short' and types != 'long':
