@@ -1,9 +1,9 @@
 openapi: 3.0.1
 
 info:
-  title: ainize-gpt2-story
+  title: ainize-gpt2-film
   description: |
-      generate story via story based fine-tuned gpt2 model
+      generate film script via film script based fine-tuned gpt2 model
   contact:
     name: Ainizer - gyumin Lee
   version: "2.0"
@@ -12,7 +12,7 @@ info:
     url: https://github.com/huggingface/transformers/blob/master/LICENSE
 
 servers:
-  - url: https://main-gpt2-story-gmlee329.endpoint.ainize.ai
+  - url: https://main-gpt2-film-gmlee329.endpoint.ainize.ai
 
 paths:
   /gpt2-film/short:
