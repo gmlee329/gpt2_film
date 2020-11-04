@@ -1,7 +1,7 @@
 # gpt2_film
 
-This GPT2-story model generates genre story text.  
-When you enter text at the beginning of the story, the model gives you the rest of the story as long as you want.  
+This GPT2-film model generates film script text.  
+When you enter text for the beginning of the film script, the model gives you the rest of the film script as long as you want.
 
 ## How to use
 
